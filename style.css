@@ -1,0 +1,146 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+
+.outer-box{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top left, #e92c2c ,#5bf4ff);
+}
+
+.inner-box{
+    width: 300px;
+    margin: 0  auto;
+    position: relative;
+    top: 5%;
+    padding: 20px 40px;
+    border: 2px solid gray;
+    background:linear-gradient(to left, rgb(218, 165, 165), rgba(66, 63, 238, 0.685));
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #df3e3e;
+    z-index: 2;
+    backdrop-filter: blur(8px);
+}
+
+.signup-header h1{
+    font-size: 2.5rem;
+    color: #0a0808;
+    text-align: center;
+}
+
+.signup-header p{
+    font-size: 1rem;
+    color: rgb(134, 127, 127);
+    text-align: center;
+}
+
+.sigup-body{
+    margin: 20px 0;
+}
+
+.sigup-body p{
+    margin: 10px 0;
+}
+
+.sigup-body p label{
+    display: block;
+    font-weight: bold;
+}
+
+.sigup-body input{
+    width: 100%;
+    padding: 10px 0;
+    border:2px solid #4d4848b0;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin: 4px;
+}
+
+.sigup-body p input[type="submit"]{
+    background-color: #437fee;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.sigup-body p input[type="submit"]:hover{
+    background-color: #063792;
+}
+
+.signup-footer p{
+    color: #2c2727d8;
+    text-align: center;
+}
+
+.signup-footer p a{
+    color: #437fee;
+    font-weight: bold;
+}
+
+.circul{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: linear-gradient(to top right, red, blue);
+    position: absolute;
+    
+}
+
+.c1{
+    top: 100px;
+    left: 100px;
+    z-index:1;
+    animation-name: my-animation;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+}
+
+.c2{
+    bottom: 200px;
+    right: 50px;
+    z-index:1;
+    animation-name: my-animation;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-direction: reverse;
+}
+
+@keyframes my-animation{
+    0% {
+        background-color: blue;
+        top: 0px;
+        left: 0px;
+    }
+
+    25% {
+   
+        top: 50vh;
+        left: 0vw;
+    }
+
+    50% {
+    
+        top: 50vh;
+        left: 80vw;
+    }
+
+    75% {
+
+        top: 0vh;
+        left: 80vw;
+    }
+    100% {
+    
+        top: 0vh;
+        left: 0vw;
+    }
+}
